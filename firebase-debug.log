@@ -1,0 +1,81 @@
+[debug] [2025-01-24T09:20:19.847Z] ----------------------------------------------------------------------
+[debug] [2025-01-24T09:20:19.851Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-01-24T09:20:19.851Z] CLI Version:   13.29.0
+[debug] [2025-01-24T09:20:19.852Z] Platform:      linux
+[debug] [2025-01-24T09:20:19.852Z] Node Version:  v20.17.0
+[debug] [2025-01-24T09:20:19.852Z] Time:          Fri Jan 24 2025 09:20:19 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-01-24T09:20:19.852Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-24T09:20:19.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-24T09:20:19.991Z] > authorizing via signed-in user (info@patooworld.com)
+[debug] [2025-01-24T09:20:19.991Z] [iam] checking project elite-flow-386908 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-24T09:20:19.993Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:20:19.993Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:20:19.995Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions [none]
+[debug] [2025-01-24T09:20:19.995Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions x-goog-quota-user=projects/elite-flow-386908
+[debug] [2025-01-24T09:20:19.995Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T09:20:20.312Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions 200
+[debug] [2025-01-24T09:20:20.312Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T09:20:20.314Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:20:20.314Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:20:20.315Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/elite-flow-386908 [none]
+[debug] [2025-01-24T09:20:20.510Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/elite-flow-386908 200
+[debug] [2025-01-24T09:20:20.520Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/elite-flow-386908 {"projectId":"elite-flow-386908","projectNumber":"81792132824","displayName":"ATOLOG","name":"projects/elite-flow-386908","resources":{"hostingSite":"elite-flow-386908","realtimeDatabaseInstance":"elite-flow-386908-default-rtdb","storageBucket":"elite-flow-386908.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_84520899-d4a1-427b-9472-3c1c41625520"}
+[debug] [2025-01-24T09:21:07.105Z] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at findDependency (/nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/frameworks/utils.js:188:23)
+    at discover (/nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:51:54)
+    at async /nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:36:63
+    at async discover (/nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/frameworks/index.js:47:32)
+    at async prepareFrameworks (/nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/frameworks/index.js:192:25)
+    at async deploy (/nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/deploy/index.js:58:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-24T09:25:27.884Z] ----------------------------------------------------------------------
+[debug] [2025-01-24T09:25:27.887Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-01-24T09:25:27.887Z] CLI Version:   13.29.0
+[debug] [2025-01-24T09:25:27.888Z] Platform:      linux
+[debug] [2025-01-24T09:25:27.888Z] Node Version:  v20.17.0
+[debug] [2025-01-24T09:25:27.888Z] Time:          Fri Jan 24 2025 09:25:27 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-01-24T09:25:27.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-24T09:25:28.006Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-24T09:25:28.007Z] > authorizing via signed-in user (info@patooworld.com)
+[debug] [2025-01-24T09:25:28.007Z] [iam] checking project elite-flow-386908 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-24T09:25:28.008Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:25:28.009Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:25:28.010Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions [none]
+[debug] [2025-01-24T09:25:28.011Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions x-goog-quota-user=projects/elite-flow-386908
+[debug] [2025-01-24T09:25:28.011Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T09:25:28.767Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions 200
+[debug] [2025-01-24T09:25:28.768Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elite-flow-386908:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T09:25:28.772Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:25:28.773Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:25:28.773Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/elite-flow-386908 [none]
+[debug] [2025-01-24T09:25:29.004Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/elite-flow-386908 200
+[debug] [2025-01-24T09:25:29.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/elite-flow-386908 {"projectId":"elite-flow-386908","projectNumber":"81792132824","displayName":"ATOLOG","name":"projects/elite-flow-386908","resources":{"hostingSite":"elite-flow-386908","realtimeDatabaseInstance":"elite-flow-386908-default-rtdb","storageBucket":"elite-flow-386908.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_84520899-d4a1-427b-9472-3c1c41625520"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-01-24T09:26:19.989Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:26:19.989Z] Checked if tokens are valid: true, expires at: 1737713787289
+[debug] [2025-01-24T09:26:19.989Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/elite-flow-386908/sites/elite-flow-386908 [none]
+[debug] [2025-01-24T09:26:20.786Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/elite-flow-386908/sites/elite-flow-386908 200
+[debug] [2025-01-24T09:26:20.786Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/elite-flow-386908/sites/elite-flow-386908 {"name":"projects/elite-flow-386908/sites/elite-flow-386908","defaultUrl":"https://elite-flow-386908.web.app","appId":"1:81792132824:web:b5a578ef7f78edb50299ad","type":"DEFAULT_SITE"}
+[info] 
+
+[info] > Build error occurred
+
+[info] [Error: > Couldn't find any `pages` or `app` directory. Please create one under the project root]
+
+[debug] [2025-01-24T09:26:22.361Z] Error: ENOENT: no such file or directory, open '/home/user/atg/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
